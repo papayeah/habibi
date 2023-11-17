@@ -89,7 +89,6 @@ main > #middle {
     background: rgb(136, 189, 242);
     font-family: "Crimson Pro", serif;
     height: 510px;
-    padding: 0 90px;
     position: fixed;
     text-transform: uppercase;
     top: 0;
@@ -98,11 +97,12 @@ main > #middle {
 }
 
 #top > .open {
+    align-items: center;
     display: flex;
     font-size: 48pt;
+    height: 100%;
     justify-content: center;
     line-height: 42pt;
-    margin: 175px auto 0 auto;
     min-width: 81%;
     text-align: center;
 }
@@ -156,10 +156,12 @@ footer {
 }
 
 .footerItems {
+    align-items: center;
+    display: flex;
     font-size: 15pt;
+    height: 100%;
     margin: 0 auto;
     max-width: fit-content;
-    padding-top: 84px;
     text-transform: uppercase;
 }
 
@@ -280,6 +282,7 @@ main .gallery {
     font-size: 18pt;
     font-weight: 400;
     margin: 130px auto 0 auto;
+    text-transform: none;
     width: 63%;
 }
 
