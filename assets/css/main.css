@@ -1,0 +1,300 @@
+/* TYPEFACE IMPORTS */
+/* Crimson Pro, serif, 200, 300 */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,200;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:ital,wght@0,300;1,300&display=swap');
+
+/* AR One Sans, sans, 400 */
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans&family=Crimson+Pro:ital,wght@0,300;1,300&display=swap');
+
+/* STYLESHEET */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:link {
+    color: rgb(0, 115, 250);
+}
+
+:visited {
+    color: rgb(0, 115, 250);
+}
+
+body {
+    color: rgb(0, 115, 250);
+}
+
+h1, h2, h3 {
+    font-family: "Crimson Pro", serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+h4, h5, h6 {
+    font-family: "AR One Sans", sans-serif;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+nav {
+    display: flex;
+    font-family: "Crimson Pro", serif;
+    font-size: 18pt;
+    justify-content: space-between;
+    padding: 90px 90px 0 90px;
+    position: fixed;
+    right: 0;
+    text-transform: uppercase;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+#logotype {
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    text-align: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    padding-left: 15px;
+}
+
+main {
+    background: rgb(186, 230, 255);
+    margin-bottom: 180px;
+    max-width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+main > #middle {
+    margin: 510px 0 180px 0;
+}
+
+#top {
+    background: rgb(136, 189, 242);
+    font-family: "Crimson Pro", serif;
+    height: 510px;
+    padding: 0 90px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 0;
+}
+
+#top > .open {
+    font-size: 48pt;
+    margin: 175px auto 0 auto;
+    min-width: 75%;
+    text-align: center;
+}
+
+#top .subtitle {
+    font-size: 24pt;
+    line-height: 57pt;
+}
+
+#middle {
+    padding: 90px;
+}
+
+.projects {
+    display: grid;
+    gap: 60px 0;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+video {
+    max-width: 100%;
+}
+
+.project {
+    border-radius: 2px;
+    position: relative;
+}
+
+.titles {
+    padding-bottom: 20px;
+}
+
+.titles h1 {
+    font-size: 21pt;
+}
+
+.titles h6 {
+    font-size: 9pt;
+}
+
+footer {
+    background: rgb(136, 189, 242);
+    bottom: 0;
+    font-weight: 200;
+    height: 180px;
+    position: fixed;
+    width: 100%;
+    z-index: 0;
+}
+
+.footerItems {
+    font-size: 15pt;
+    margin: 0 auto;
+    max-width: fit-content;
+    padding-top: 84px;
+    text-transform: uppercase;
+}
+
+.footerItems a {
+    text-decoration: underline;
+}
+
+/* PROJECTS */
+
+main .hero {
+    background-attachment: fixed;
+    background-position: center -120px;
+    background-size: cover;
+    height: 75vh;
+    max-width: 100%;
+}
+
+main .hero.p1 {
+    background-image: url("../imgs/INDUSTRY/Timberland/poster.png");
+}
+
+main .hero.p2 {
+    background-image: url("../imgs/INDUSTRY/One/ONE_poster.png");
+}
+
+main .hero.p3 {
+    background-image: url("../imgs/INDUSTRY/Promo/poster.png");
+}
+
+main .proj {
+    font-size: 16pt;
+}
+
+main .title {
+    margin: 45px auto 0 31.9%;
+    width: fit-content;
+}
+
+main h1 {
+    font-size: 72pt;
+}
+
+main h4 {
+    font-size: 18pt;
+    line-height: 6pt;
+}
+
+main h5 {
+    line-height: 28pt;
+}
+
+main .desc {
+    padding: 45px 0;
+    margin: 0 auto;
+    width: 36%;
+}
+
+sup {
+    font-size: 9pt;
+    text-transform: uppercase;
+}
+
+main .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 15px 90px;
+    max-width: 100%;
+    padding-bottom: 90px;
+}
+
+.caption h5 {
+    color: rgb(0,0,0);
+    line-height: 15pt;
+}
+
+.secTitle {
+    line-height: normal;
+    margin-left: 90px;
+}
+
+.gallery video, .gallery img {
+    height: fit-content;
+    max-width: 100%;
+}
+
+.gallery .first {
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.gallery .next {
+    grid-column: 1/3;
+}
+
+.gallery .right {
+    grid-column: 2/4;
+}
+
+.gallery .left {
+    grid-column: 1/3;
+}
+
+.gallery .last {
+    align-self: end;
+}
+
+.gallery .whole {
+    grid-column: 1/4;
+}
+
+/* archives */
+
+#top > .archDesc {
+    align-items: end;
+    display: grid;
+    gap: 0 21px;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 18pt;
+    font-weight: 400;
+    margin: 130px auto 0 auto;
+    width: 63%;
+}
+
+main .gallery.archive {
+    align-items: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.gallery .arch {
+    height: fit-content;
+    margin-bottom: 45px;
+}
+
+.gallery .arch.last {
+    margin-bottom: 0;
+}
+
+.gallery .arch h5 {
+    line-height: 30pt;
+}
+
+.arch .first {
+    grid-column: 1/3;
+}
