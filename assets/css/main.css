@@ -96,15 +96,17 @@ main > #middle {
 }
 
 #top > .open {
+    display: flex;
     font-size: 48pt;
+    justify-content: center;
     margin: 175px auto 0 auto;
-    min-width: 75%;
+    min-width: 81%;
     text-align: center;
 }
 
 #top .subtitle {
-    font-size: 24pt;
-    line-height: 57pt;
+    font-size: 21pt;
+    padding-top: 30px;
 }
 
 #middle {
