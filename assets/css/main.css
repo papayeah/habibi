@@ -180,15 +180,15 @@ main .hero {
 }
 
 main .hero.p1 {
-    background-image: url("../imgs/INDUSTRY/Timberland/poster.png");
+    background-image: url("../imgs/comm/Timberland/poster.png");
 }
 
 main .hero.p2 {
-    background-image: url("../imgs/INDUSTRY/One/ONE_poster.png");
+    background-image: url("../imgs/comm/One/ONE_poster.png");
 }
 
 main .hero.p3 {
-    background-image: url("../imgs/INDUSTRY/Promo/poster.png");
+    background-image: url("../imgs/comm/Promo/poster.png");
 }
 
 main .proj {
