@@ -90,7 +90,6 @@ main > #middle {
     font-family: "Crimson Pro", serif;
     height: 510px;
     position: fixed;
-    text-transform: uppercase;
     top: 0;
     width: 100%;
     z-index: 0;
@@ -102,7 +101,6 @@ main > #middle {
     font-size: 48pt;
     height: 100%;
     justify-content: center;
-    line-height: 42pt;
     min-width: 81%;
     text-align: center;
 }
