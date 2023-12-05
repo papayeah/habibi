@@ -17,7 +17,7 @@
 }
 
 :link, :visited, body {
-    color: rgb(0, 115, 250);
+    color: rgb(13, 13, 13);
 }
 
 h1, h2, h3 {
@@ -72,7 +72,7 @@ li {
 }
 
 main {
-    background: rgb(186, 230, 255);
+    background: rgb(237, 237, 237);
     margin-bottom: 180px;
     max-width: 100%;
     position: relative;
@@ -80,7 +80,7 @@ main {
 }
 
 #top {
-    background: rgb(136, 189, 242);
+    background: rgb(60, 60, 60);
     font-family: "Crimson Pro", serif;
     height: 510px;
     position: fixed;
@@ -146,7 +146,7 @@ video {
 }
 
 footer {
-    background: rgb(136, 189, 242);
+    background: rgb(60, 60, 60);
     bottom: 0;
     font-weight: 200;
     height: 180px;
