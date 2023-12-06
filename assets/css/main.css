@@ -72,7 +72,7 @@ a {
 }
 
 nav a:after, .footerItems a:after {
-    background-color: rgb(45, 156, 252);
+    background-color: rgb(235, 192, 0);
     bottom: -9px;
     color: inherit;
     content: '';
@@ -93,7 +93,7 @@ li {
 }
 
 li:hover {
-    color: rgb(45, 156, 252);
+    color: rgb(235, 192, 0);
 }
 
 main {
@@ -190,7 +190,7 @@ footer {
 }
 
 .footerItems a:hover {
-    color: rgb(45, 156, 252);
+    color: rgb(235, 192, 0);
 }
 
 
