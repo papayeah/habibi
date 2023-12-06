@@ -83,6 +83,10 @@ nav a:after, .footerItems a:after {
     width: 0;
 }
 
+nav a:active, .footerItems a:active {
+    color: rgb(235, 192, 0);
+}
+
 nav a:hover:after, .footerItems a:hover:after {
     width: 100%;
 }
