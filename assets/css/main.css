@@ -10,14 +10,18 @@
 
 /* STYLESHEET */
 
-* {
+*, *:after, *:before {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
+/* html {
+    scroll-behavior: smooth;
+} */
+
 :link, :visited, body {
-    color: rgb(13, 13, 13);
+    color: rgb(243, 252, 255);
 }
 
 h1, h2, h3 {
@@ -62,17 +66,38 @@ ul {
 }
 
 a {
+    padding: 0 1px;
+    position: relative;
     text-decoration: none;
 }
 
+nav a:after, .footerItems a:after {
+    background-color: rgb(45, 156, 252);
+    bottom: -9px;
+    color: inherit;
+    content: '';
+    height: 3px;
+    left: 0;
+    position: absolute;
+    transition: width 360ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    width: 0;
+}
+
+nav a:hover:after, .footerItems a:hover:after {
+    width: 100%;
+}
+
 li {
-    color: rgb(243, 251, 255);
     display: inline-block;
-    padding-left: 15px;
+    transition: color 150ms linear;
+}
+
+li:hover {
+    color: rgb(45, 156, 252);
 }
 
 main {
-    background: rgb(237, 237, 237);
+    background-color: rgb(243, 252, 255);
     margin-bottom: 180px;
     max-width: 100%;
     position: relative;
@@ -80,7 +105,7 @@ main {
 }
 
 #top {
-    background: rgb(60, 60, 60);
+    background: rgb(48, 48, 48);
     font-family: "Crimson Pro", serif;
     height: 510px;
     position: fixed;
@@ -98,12 +123,11 @@ main {
     justify-content: center;
     min-width: 81%;
     text-align: center;
-    transition: filter 900ms cubic-bezier(0.165, 0.84, 0.44, 1);
 }
 
 #top .subtitle {
     font-family: "Crimson Pro", serif;
-    font-size: 18pt;
+    font-size: 21pt;
     padding-top: 6px;
     text-transform: none;
 }
@@ -118,6 +142,7 @@ main {
 }
 
 .projects {
+    color: rgb(48, 48, 48);
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     row-gap: 45px;
@@ -128,13 +153,7 @@ video {
 }
 
 .project {
-    border-radius: 2px;
     position: relative;
-}
-
-.titles {
-    padding-bottom: 15px;
-    width: max-content;
 }
 
 .titles h1 {
@@ -146,7 +165,7 @@ video {
 }
 
 footer {
-    background: rgb(60, 60, 60);
+    background: rgb(48, 48, 48);
     bottom: 0;
     font-weight: 200;
     height: 180px;
@@ -166,8 +185,14 @@ footer {
 }
 
 .footerItems a {
-    text-decoration: underline;
+    color: inherit;
+    transition: color 180ms linear;
 }
+
+.footerItems a:hover {
+    color: rgb(45, 156, 252);
+}
+
 
 /* PROJECTS */
 
@@ -264,8 +289,8 @@ main .gallery {
 }
 
 /* archives */
-
 #top > .archDesc {
+    filter: blur(0);
     display: grid;
     gap: 0 21px;
     grid-template-columns: repeat(2, 1fr);
