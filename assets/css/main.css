@@ -249,11 +249,6 @@ main .desc {
 }
 
 .desc a {
-    color: rgb(48, 48, 48);
-    transition: color 180ms linear;
-}
-
-.desc a:hover {
     color: rgb(235, 192, 0);
 }
 
