@@ -153,6 +153,11 @@ main {
     row-gap: 45px;
 }
 
+.projects div {
+    margin: 0 auto;
+    max-width: 1920px;
+}
+
 video {
     max-width: 100%;
 }
